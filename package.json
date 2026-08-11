@@ -1,0 +1,26 @@
+{
+  "name": "file-viewer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Visualize arquivos que o desktop não exibe nativamente: .md, .csv, .json, .yaml, .ini e muito mais.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:web": "npm run dev --workspace=@file-viewer/web",
+    "dev:ext": "npm run dev --workspace=@file-viewer/extension",
+    "build": "npm run build --workspace=@file-viewer/web && npm run build --workspace=@file-viewer/extension",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "zip": "npm run zip --workspace=@file-viewer/extension"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

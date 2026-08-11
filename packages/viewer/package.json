@@ -1,0 +1,33 @@
+{
+  "name": "@file-viewer/viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.14.9",
+    "dompurify": "^3.2.3",
+    "highlight.js": "^11.11.0",
+    "js-yaml": "^4.1.0",
+    "marked": "^15.0.4",
+    "marked-highlight": "^2.2.1",
+    "papaparse": "^5.4.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/papaparse": "^5.3.15",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.7",
+    "jsdom": "^25.0.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

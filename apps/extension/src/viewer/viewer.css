@@ -1,0 +1,84 @@
+:root {
+  --bg: #070b13;
+  --text: #e8ecf4;
+  --muted: #93a0b8;
+  --accent: #6d92ff;
+  --border: #1d2737;
+  --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.fl-ext {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fl-ext__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(14, 20, 34, 0.6);
+}
+
+.fl-ext__logo {
+  display: grid;
+  place-items: center;
+}
+
+.fl-ext__titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.fl-ext__titles strong {
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.fl-ext__titles span {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.fl-ext__hint {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  background: rgba(7, 11, 19, 0.6);
+}
+
+.fl-ext__hint strong {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.fl-ext__viewer {
+  flex: 1;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["chrome"],
+    "paths": {
+      "@file-viewer/viewer": ["../../packages/viewer/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}
